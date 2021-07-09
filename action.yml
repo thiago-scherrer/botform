@@ -1,0 +1,6 @@
+# action.yml
+name: 'thiago-scherrer/botform'
+description: 'Github Action and terraform'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
