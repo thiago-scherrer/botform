@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function tfenv () {
+function tfEnv () {
 	# remove me
 	ls -hal
 	tfenv install \
@@ -14,5 +14,5 @@ function terraForm () {
 	terraform $1
 }
 
-tfenv
+tfEnv
 terraForm $1
