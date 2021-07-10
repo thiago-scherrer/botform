@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function tfenv () {
-	tfenv --help
+	terraform plan
 }
 
 tfenv
