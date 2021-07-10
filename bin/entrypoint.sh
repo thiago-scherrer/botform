@@ -9,5 +9,5 @@ function terraForm () {
 	terraform $INPUT_TFARG
 }
 
-tfEnv
+tfEnv 1>/dev/null
 terraForm
