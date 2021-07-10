@@ -1,6 +1,12 @@
-# action.yml
 name: 'thiago-scherrer/botform'
 description: 'Github Action and terraform'
+inputs:
+  tfarg:
+    description: 'terraform arg'
+    required: true
+    default: 'plan'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.tfarg }}

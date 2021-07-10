@@ -4,7 +4,7 @@ function tfenv () {
 	# remove me
 	ls -hal
 	tfenv install \
-	&& tfenv install
+	&& tfenv use
 }
 
 function terraForm () {
