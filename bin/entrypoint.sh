@@ -1,5 +1,9 @@
 #!/bin/bash
 
+function workDir() {
+	cd $INPUT_TFDIR
+}
+
 function tfEnv () {
 	tfenv install \
 	&& tfenv use

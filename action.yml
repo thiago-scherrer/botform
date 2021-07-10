@@ -5,8 +5,14 @@ inputs:
     description: 'terraform arg'
     required: true
     default: 'plan'
+  tfdir:
+    description: 'terraform workdir'
+    required: true
+    default: '.'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.tfarg }}
+    - ${{ inputs.tfdir }}
