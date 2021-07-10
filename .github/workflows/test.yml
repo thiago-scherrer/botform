@@ -7,11 +7,21 @@ on:
 
 jobs:
   build:
-    runs-on: [ubuntu-latest]
+    name: test-case-1
+    runs-on: ubuntu-latest
     steps:
-      -
-        name: Checkout project
-        uses: actions/checkout@v2
-      -
-        name: Test
-        run: docker build . -t botform
+    -
+      name: Check out
+      uses: actions/checkout@v2
+    -
+      name: plan
+      uses: thiago-scherrer/botform@0.0.10
+      with:
+        tfarg: 'plan'
+        tfdir: 'test'
+    -
+      name: apply
+      uses: thiago-scherrer/botform@0.0.10
+      with:
+        tfarg: 'apply -auto-approve'
+        tfdir: 'test'
