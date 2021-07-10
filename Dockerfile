@@ -11,4 +11,4 @@ RUN git clone https://github.com/tfutils/tfenv.git ~/.tfenv \
 
 COPY bin/entrypoint.sh /bin/entrypoint.sh
 
-#ENTRYPOINT ["/bin/entrypoint.sh"]
+ENTRYPOINT ["/bin/entrypoint.sh"]
