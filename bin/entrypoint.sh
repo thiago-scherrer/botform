@@ -5,8 +5,8 @@ function workDir() {
 }
 
 function tfEnv () {
-	tfenv install \
-	&& tfenv use
+	tfenv install $INPUT_TFVERSION\
+	&& tfenv use $INPUT_TFVERSION
 }
 
 function terraForm () {

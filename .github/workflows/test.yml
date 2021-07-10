@@ -19,9 +19,11 @@ jobs:
       with:
         tfarg: 'plan'
         tfdir: 'test'
+        tfversion: '1.0.1'
     -
       name: apply
       uses: thiago-scherrer/botform@0.0.11
       with:
         tfarg: 'apply -auto-approve'
         tfdir: 'test'
+        tfversion: '1.0.1'

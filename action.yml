@@ -9,6 +9,10 @@ inputs:
     description: 'terraform workdir'
     required: true
     default: '.'
+  tfversion:
+    description: 'terraform version'
+    required: true
+    default: '1.0.1'
 
 runs:
   using: 'docker'
@@ -16,3 +20,4 @@ runs:
   args:
     - ${{ inputs.tfarg }}
     - ${{ inputs.tfdir }}
+    - ${{ inputs.tfversion }}
