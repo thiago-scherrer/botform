@@ -1,8 +1,18 @@
 #!/bin/bash
 
 function tfenv () {
+	# remove me
 	ls -hal
-	terraform plan
+	tfenv install \
+	&& tfenv install
+}
+
+function terraForm () {
+	# remove me
+	ls -hal
+	echo $1
+	terraform $1
 }
 
 tfenv
+terraForm $1
