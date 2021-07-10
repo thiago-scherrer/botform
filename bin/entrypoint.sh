@@ -13,5 +13,6 @@ function terraForm () {
 	terraform $INPUT_TFARG
 }
 
+workDir
 tfEnv 1>/dev/null
 terraForm
